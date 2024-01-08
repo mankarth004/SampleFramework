@@ -11,7 +11,32 @@
 		16DF637A2B48646E00602ADF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DF63792B48646E00602ADF /* ContentView.swift */; };
 		16DF637C2B48647100602ADF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16DF637B2B48647100602ADF /* Assets.xcassets */; };
 		16DF637F2B48647100602ADF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16DF637E2B48647100602ADF /* Preview Assets.xcassets */; };
+		16DF63B12B486B9C00602ADF /* KMUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DF63AC2B486B8400602ADF /* KMUI.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16DF63AB2B486B8400602ADF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16DF63A62B486B8400602ADF /* KMUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 16DF63512B48642700602ADF;
+			remoteInfo = KMUI;
+		};
+		16DF63AD2B486B8400602ADF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16DF63A62B486B8400602ADF /* KMUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 16DF635B2B48642700602ADF;
+			remoteInfo = KMUITests;
+		};
+		16DF63AF2B486B9700602ADF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16DF63A62B486B8400602ADF /* KMUI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 16DF63502B48642700602ADF;
+			remoteInfo = KMUI;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		16DF63742B48646E00602ADF /* FrameworkSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameworkSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +44,7 @@
 		16DF63792B48646E00602ADF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		16DF637B2B48647100602ADF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16DF637E2B48647100602ADF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		16DF63A62B486B8400602ADF /* KMUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KMUI.xcodeproj; path = ../../../KMUI/KMUI.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16DF63B12B486B9C00602ADF /* KMUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +64,7 @@
 			children = (
 				16DF63762B48646E00602ADF /* FrameworkSample */,
 				16DF63752B48646E00602ADF /* Products */,
+				16DF63A22B48670300602ADF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +79,7 @@
 		16DF63762B48646E00602ADF /* FrameworkSample */ = {
 			isa = PBXGroup;
 			children = (
+				16DF63852B48654500602ADF /* Modules */,
 				16DF63772B48646E00602ADF /* FrameworkSampleApp.swift */,
 				16DF63792B48646E00602ADF /* ContentView.swift */,
 				16DF637B2B48647100602ADF /* Assets.xcassets */,
@@ -67,6 +96,30 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		16DF63852B48654500602ADF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				16DF63A62B486B8400602ADF /* KMUI.xcodeproj */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		16DF63A22B48670300602ADF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16DF63A72B486B8400602ADF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16DF63AC2B486B8400602ADF /* KMUI.framework */,
+				16DF63AE2B486B8400602ADF /* KMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,6 +134,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				16DF63B02B486B9700602ADF /* PBXTargetDependency */,
 			);
 			name = FrameworkSample;
 			productName = FrameworkSample;
@@ -113,12 +167,35 @@
 			mainGroup = 16DF636B2B48646E00602ADF;
 			productRefGroup = 16DF63752B48646E00602ADF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 16DF63A72B486B8400602ADF /* Products */;
+					ProjectRef = 16DF63A62B486B8400602ADF /* KMUI.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				16DF63732B48646E00602ADF /* FrameworkSample */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		16DF63AC2B486B8400602ADF /* KMUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KMUI.framework;
+			remoteRef = 16DF63AB2B486B8400602ADF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		16DF63AE2B486B8400602ADF /* KMUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KMUITests.xctest;
+			remoteRef = 16DF63AD2B486B8400602ADF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		16DF63722B48646E00602ADF /* Resources */ = {
@@ -143,6 +220,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16DF63B02B486B9700602ADF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KMUI;
+			targetProxy = 16DF63AF2B486B9700602ADF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		16DF63802B48647100602ADF /* Debug */ = {
